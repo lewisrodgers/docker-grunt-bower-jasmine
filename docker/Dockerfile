@@ -4,7 +4,7 @@ MAINTAINER Lewis Rodgers <contact@lewisrodgers.com>
 
 ENV HOME /home/app
 
-RUN useradd --user-group --create-home --shell /bin/false app \
+RUN useradd --create-home app \
     && npm install --global grunt-cli bower karma
 
 COPY package.json npm-shrinkwrap.json bower.json .bowerrc $HOME/
