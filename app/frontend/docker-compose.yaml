@@ -2,6 +2,7 @@ version: "3"
 services:
     webapp:
         build: ../../docker
+        command: grunt watch
         volumes:
             - .:/home/app
             - /home/app/node_modules
