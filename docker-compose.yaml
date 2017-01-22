@@ -1,0 +1,8 @@
+version: "3"
+services:
+    webapp:
+        build: .
+        volumes:
+            - .:/home/app
+            - /home/app/node_modules
+            - /home/app/vendor
