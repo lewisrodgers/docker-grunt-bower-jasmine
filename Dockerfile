@@ -12,6 +12,7 @@ RUN chown --recursive app:app $HOME/*
 
 USER app
 WORKDIR $HOME
-RUN npm install && npm cache clean && bower install
+RUN npm install && npm cache clean \
+    && bower install && bower cache clean
 
 CMD ["bash"]
