@@ -1,7 +1,7 @@
 version: "3"
 services:
     webapp:
-        build: .
+        build: ../../docker
         volumes:
             - .:/home/app
             - /home/app/node_modules
