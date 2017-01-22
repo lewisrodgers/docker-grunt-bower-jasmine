@@ -1,21 +1,17 @@
 ## Usage
-First, in a terminal, navigation to the root folder where the `docker-compose.yaml` exists and build the image. 
+In a terminal, navigate to the folder where `docker-compose.yaml` exists to build an image.
 
 ```bash
 $ docker-compose build
 ```
 
-Navigate to the target project folder. Important: The container expects grunt and karma config files and a src folder structure based on [ngBoilerplate](https://github.com/ngbp/ngbp). 
+Start the container to kick-off the build tasks and start the test runner.
 
-```
-$ cd [target/project/folder]
+```bash
+$ docker-compose up
 ```
 
-Run the container to kick-off the build tasks and start the test runner.
-
-```
-$ docker run -it --rm -v $(pwd):/home/app [IMAGE]
-```
+If you or a colleague update the core contents of the `docker` folder during development you will need to rebuild the image.
 
 ## Configuration
 This image includes the following:
