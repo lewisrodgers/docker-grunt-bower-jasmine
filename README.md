@@ -1,18 +1,3 @@
-## Usage
-In a terminal, navigate to the folder where `docker-compose.yaml` exists to build an image.
-
-```bash
-$ docker-compose build
-```
-
-Start the container to kick-off the build tasks and start the test runner.
-
-```bash
-$ docker-compose up
-```
-
-If you or a colleague update the core contents of the `docker` folder during development you will need to rebuild the image.
-
 ## Configuration
 This image includes the following:
 
